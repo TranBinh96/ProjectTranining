@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\NET.BOOK.MVC.props" />
+</Project>
