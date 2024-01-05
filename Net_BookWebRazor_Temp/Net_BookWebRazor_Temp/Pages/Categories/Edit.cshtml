@@ -1,0 +1,27 @@
+﻿@page
+@model Net_BookWebRazor_Temp.Pages.Categories.EditModel
+<h1>Update Category</h1>
+@* <span asp-validation-summary="All"></span> *@
+<div asp-validation-summary="ModelOnly" val class="text-danger"></div>
+
+<form method="post" >
+    <input asp-for="category.Id" hidden>
+    <div class="mb-3">
+        <label asp-for="category.Name" class="form-label">Name Category</label>
+        <input asp-for="category.Name" type="text" class="form-control">
+        <span asp-validation-for="category.Name" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="category.DisplayOrder" class="form-label">Display Order</label>
+        <input asp-for="category.DisplayOrder" type="text" class="form-control">
+        <span asp-validation-for="category.DisplayOrder" class="text-danger"></span>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <button type="submit" class="btn btn-primary">Update Category</button>
+        </div>
+        <div class="col-3">
+            <a asp-action="Index" type="button" class="btn btn-dark">Back To List</a>
+        </div>
+    </div>
+</form>

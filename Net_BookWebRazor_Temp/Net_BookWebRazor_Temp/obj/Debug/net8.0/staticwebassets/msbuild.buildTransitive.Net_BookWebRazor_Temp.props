@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Net_BookWebRazor_Temp.props" />
+</Project>
