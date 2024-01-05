@@ -1,0 +1,9 @@
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+Add-Migration "Initial Migration"
+
++Modifile table 
+	 protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Category>().HasData()            
+        }
