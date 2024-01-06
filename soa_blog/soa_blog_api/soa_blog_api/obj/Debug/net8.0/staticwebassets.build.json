@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BN0cxd9hCCI86xH6M+7bKebKQY3ba8ot2IPonDZERfw=",
+  "Source": "soa_blog_api",
+  "BasePath": "_content/soa_blog_api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
