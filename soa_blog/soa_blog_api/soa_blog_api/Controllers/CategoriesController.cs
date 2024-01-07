@@ -84,9 +84,17 @@ namespace soa_blog_api.Controllers
                 return NotFound();
             
             return Ok(CategoriesDTOResponse.formToData(category));
-
         }
 
+        [HttpDelete]
+        [Route("{id:Guid}")]
+        public async Task<IActionResult> DeleteCategoryById([FromRoute] Guid id)
+        {            
+            var category =  await categoryResponsitory.DeleteAsync(id);
+            if(category==null)
+                return NotFound();
+            return Ok(CategoriesDTOResponse.formToData(category));
+        }
 
     }
 }

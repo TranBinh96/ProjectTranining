@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { AddCategoryRequest } from '../Model/category-request-model';
 import { Observable, Observer } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
-import { CategoryResponse } from '../Model/category-response-model';
 import { environment } from 'src/environments/environment';
-import { UpdateCategory } from '../Model/update-category-model';
+
+import { Categories } from '../Model/categories';
+import { CategoryRequest } from '../Model/categoryReponse';
 
 @Injectable({
   providedIn: 'root'
@@ -13,20 +13,22 @@ export class CategoryServiceService {
 
   constructor(private http: HttpClient) { }
 
-  addCategory(model:AddCategoryRequest):Observable<void>{
+  addCategory(model:CategoryRequest):Observable<void>{
      return  this.http.post<void>(`${environment.apiBaseUrl}/api/Categories`,model);
   }
 
-  getAllCategory() : Observable<CategoryResponse[]>{
-      return this.http.get<CategoryResponse[]>(`${environment.apiBaseUrl}/api/Categories`);
+  getAllCategory() : Observable<Categories[]>{
+      return this.http.get<Categories[]>(`${environment.apiBaseUrl}/api/Categories`);
   }
 
-  getByIdCategory(id:string) :Observable<CategoryResponse>{
-    return this.http.get<CategoryResponse>(`${environment.apiBaseUrl}/api/Categories/${id}`);
+  getByIdCategory(id:string) :Observable<Categories>{
+    return this.http.get<Categories>(`${environment.apiBaseUrl}/api/Categories/${id}`);
   }
-  updateCategory(id : string,model:UpdateCategory)
-  :Observable<void>{
-    return  this.http.put<void>(`${environment.apiBaseUrl}/api/Categories/${id}`,model);
+  updateCategory(id : string,updateCategory:CategoryRequest):Observable<Categories>{
+    return  this.http.put<Categories>(`${environment.apiBaseUrl}/api/Categories/${id}`,updateCategory);
  }
+  deleteCategory(id : string):Observable<Categories>{
+    return  this.http.delete<Categories>(`${environment.apiBaseUrl}/api/Categories/${id}`);
+  }
 
 }

@@ -8,7 +8,7 @@
     </div>
     <div class="row">
         <div class="col-12 mt-3">
-            <ng-container *ngIf="categoryResponse$ | async as categoryResponse">
+            <ng-container *ngIf="categories$ | async as categories">
                 <table class="table table-bordered ">
                     <thead>
                     <tr>
@@ -17,12 +17,12 @@
                     </tr>
                     </thead>
                     <tbody>
-                        <tr *ngFor="let category of categoryResponse ">
+                        <tr *ngFor="let category of categories ">
                             <td>{{category.name}}</td>
                             <td>{{category.urlHandle}}</td>
                             <td>
-                                <a [routerLink]="['/admin/editcategory/',category.id]" class="btn btn-info edit"><i class="bi bi-pencil-square"></i> Edit</a>
-                                <a [routerLink]="['/admin/deletecategory/',category.id]" class="btn btn-danger"><i class="bi bi-trash"></i> Delete</a>
+                                <a [routerLink]="['/admin/editcategory/',category.id]" class="btn btn-outline-info edit"><i class="bi bi-pencil-square"></i> Edit</a>
+                                <a [routerLink]="['/admin/deletecategory/',category.id]" class="btn btn-outline-danger"><i class="bi bi-trash"></i> Delete</a>
                             </td>   
                         <tr>
                     </tbody>

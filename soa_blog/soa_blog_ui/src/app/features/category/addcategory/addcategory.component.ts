@@ -1,7 +1,7 @@
 import { Component, OnDestroy } from '@angular/core';
 import { Route, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
-import { AddCategoryRequest } from 'src/app/Model/category-request-model';
+import { CategoryRequest } from 'src/app/Model/categoryReponse';
 import { CategoryServiceService } from 'src/app/services/category.service.service';
 
 @Component({
@@ -12,7 +12,7 @@ import { CategoryServiceService } from 'src/app/services/category.service.servic
 export class AddcategoryComponent implements OnDestroy {
   private addCategorySubscription? : Subscription;
 
-  model: AddCategoryRequest;
+  model: CategoryRequest;
   constructor(private categoryservice :CategoryServiceService, 
     private  router :Router){
     this.model= {

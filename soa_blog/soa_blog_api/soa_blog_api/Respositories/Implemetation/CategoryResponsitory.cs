@@ -22,6 +22,19 @@ namespace soa_blog_api.Respositories.Implemetation
             return category;
         }
 
+   
+        public async Task<Category?> DeleteAsync(Guid Id)
+        {
+            var existingCategory = await dbConnect.categories.FirstOrDefaultAsync(c => c.Id == Id); 
+            if (existingCategory is null)
+            {
+                return null;
+            }
+            dbConnect.categories.Remove(existingCategory);
+            dbConnect.SaveChanges();
+            return existingCategory;
+        }
+
         public async Task<Category?> FindById(Guid Id)
         {
             return await dbConnect.categories.FindAsync(Id);
@@ -43,5 +56,7 @@ namespace soa_blog_api.Respositories.Implemetation
             }
             return null;
         }
+
+       
     }
 }
