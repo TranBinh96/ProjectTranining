@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace soa_blog_api.Migrations
 {
     /// <inheritdoc />
-    public partial class AddTableToDB : Migration
+    public partial class TestDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

@@ -12,8 +12,8 @@ using soa_blog_api.Data;
 namespace soa_blog_api.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240106003910_AddTableToDB")]
-    partial class AddTableToDB
+    [Migration("20240107072911_TestDB")]
+    partial class TestDB
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

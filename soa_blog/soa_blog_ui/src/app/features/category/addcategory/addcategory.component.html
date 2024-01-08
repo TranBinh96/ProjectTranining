@@ -5,11 +5,15 @@
             <form #form="ngForm" (ngSubmit)="onFromSubmit()">
                 <div class="mb-3">
                   <label for="categoryName" class="form-label">Name Category</label>
-                  <input type="text" class="form-control" id="categoryName" name="categoryName" [(ngModel)]="model.name" >
+                  <input type="text" class="form-control" id="categoryName" 
+                  name="categoryName" [(ngModel)]="model.name"
+                  placeholder="Category Name" >
                 </div>
                 <div class="mb-3">
                   <label for="urlHandle" class="form-label">Url Handle</label>
-                  <input type="text" class="form-control" id="urlHandle" name="urlHandle" [(ngModel)]="model.urlHandle">
+                  <input type="text" class="form-control" 
+                  placeholder="Link Url Handle" id="urlHandle" 
+                  name="urlHandle" [(ngModel)]="model.urlHandle">
                 </div>
                 <button type="submit" class="btn btn-primary submit"> <i class="bi bi-plus-square"></i> Add Category</button>                
                 <a routerLink="/admin/categories" class="btn btn-dark"><i class="bi bi-arrow-return-left"></i> Back To List</a>

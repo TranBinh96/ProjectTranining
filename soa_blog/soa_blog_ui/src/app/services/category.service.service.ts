@@ -24,9 +24,11 @@ export class CategoryServiceService {
   getByIdCategory(id:string) :Observable<Categories>{
     return this.http.get<Categories>(`${environment.apiBaseUrl}/api/Categories/${id}`);
   }
+
   updateCategory(id : string,updateCategory:CategoryRequest):Observable<Categories>{
     return  this.http.put<Categories>(`${environment.apiBaseUrl}/api/Categories/${id}`,updateCategory);
- }
+  }
+  
   deleteCategory(id : string):Observable<Categories>{
     return  this.http.delete<Categories>(`${environment.apiBaseUrl}/api/Categories/${id}`);
   }

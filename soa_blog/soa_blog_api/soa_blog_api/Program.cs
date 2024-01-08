@@ -17,6 +17,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 builder.Services.AddScoped<ICategoryResponsitory, CategoryResponsitory>();
+builder.Services.AddScoped<IBlogPostResponsitory, BlogPostResponsitory>();
 
 builder.Services.AddCors(options =>
 {

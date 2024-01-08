@@ -4,6 +4,8 @@ import { CategoryListComponent } from './features/category/category-list/categor
 import { AddcategoryComponent } from './features/category/addcategory/addcategory.component';
 import { EditCategoryComponent } from './features/category/edit-category/edit-category.component';
 import { DeleteCategoryComponent } from './features/category/delete-category/delete-category.component';
+import { BlogpostListComponent } from './features/blogpost/blogpost-list/blogpost-list.component';
+import { BlogpostAddComponent } from './features/blogpost/blogpost-add/blogpost-add.component';
 
 const routes: Routes = [
   {
@@ -21,6 +23,13 @@ const routes: Routes = [
   {
     path : "admin/deletecategory/:id",
     component : DeleteCategoryComponent
+  },{
+    path : "admin/blogposts",
+    component: BlogpostListComponent
+  },
+  {
+    path : "admin/addblogpost",
+    component: BlogpostAddComponent
   }
 ];
 

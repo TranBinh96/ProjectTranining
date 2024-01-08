@@ -1,7 +1,6 @@
 .submit{
         margin-right: 17px;    
 }
-.btn-outline{
-        border-width: 2px;
-        width: 144px;
+input {
+        border: 1px solid lightgray;
     }

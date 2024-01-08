@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("soa_blog_api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23ee92d4df1416593c1015fdd4f6581a666f3318")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd8e40fe41351bc3ba293e0bf3e9914b4333b530")]
 [assembly: System.Reflection.AssemblyProductAttribute("soa_blog_api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("soa_blog_api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

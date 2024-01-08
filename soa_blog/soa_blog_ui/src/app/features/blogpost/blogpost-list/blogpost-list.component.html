@@ -1,0 +1,46 @@
+<div class="container">
+    <h1 class="mt-3">Blog Post List</h1>
+    <div class="d-flex justify-content-end mt-3">
+        <a [routerLink]="['/admin/addblogpost']"  class="btn btn-success">Add BlogPost</a>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mt-3">
+            <ng-container *ngIf="blogPosts$ | async as blogPosts">
+                <table class="table table-bordered border-dark-subtle ">
+                    <thead>
+                    <tr  class="text-center">
+                        <th scope="col">Title</th>
+                        <th scope="col">Short description</th>
+                        <th scope="col">Content</th>
+                        <th scope="col">Featured Image Url</th>
+                        <th scope="col">Url Handle</th>
+                        <th scope="col">Published Date</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Isvisible</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let blogpost of blogPosts">
+                            <td>{{blogpost.title}}</td>
+                            <td>{{blogpost.shortDescription}}</td>
+                            <td>{{blogpost.content}}</td>
+                            <td>{{blogpost.featuredImageUrl}}</td>
+                            <td>{{blogpost.urlHandle}}</td>
+                            <td>{{blogpost.publishedDate}}</td>
+                            <td>{{blogpost.author}}</td>
+                            <td>{{blogpost.isVisible}}</td>
+                            <td class="text-center">
+                                <a [routerLink]="['/admin/editcategory/',blogpost.id]" class="btn btn-outline-info edit"><i class="bi bi-pencil-square"></i> Edit</a>
+                                <a [routerLink]="['/admin/deletecategory/',blogpost.id]" class="btn btn-outline-danger"><i class="bi bi-trash"></i> Delete</a>
+                            </td>   
+                        <tr>
+                    </tbody>
+                </table>
+            </ng-container>            
+        </div>
+    </div>
+
+
+</div>
