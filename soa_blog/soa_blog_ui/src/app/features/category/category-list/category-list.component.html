@@ -1,0 +1,34 @@
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-12">
+            <h1>Category List</h1>
+            <a routerLink="/admim/addcategory" type="button" class="btn btn-primary" style="float: right;">Add Category</a>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-12 mt-3">
+            <ng-container *ngIf="categories$ | async as categories">
+                <table class="table table-bordered border-dark-subtle ">
+                    <thead>
+                    <tr  class="text-center">
+                        <th scope="col">Category Name</th>
+                        <th scope="col">Url Handler</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let category of categories ">
+                            <td>{{category.name}}</td>
+                            <td>{{category.urlHandle}}</td>
+                            <td class="text-center">
+                                <a [routerLink]="['/admin/editcategory/',category.id]" class="btn btn-outline-info edit"><i class="bi bi-pencil-square"></i> Edit</a>
+                                <a [routerLink]="['/admin/deletecategory/',category.id]" class="btn btn-outline-danger"><i class="bi bi-trash"></i> Delete</a>
+                            </td>   
+                        <tr>
+                    </tbody>
+                </table>
+            </ng-container>            
+        </div>
+    </div>
+</div>
