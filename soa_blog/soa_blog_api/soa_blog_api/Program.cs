@@ -22,7 +22,7 @@ builder.Services.AddScoped<IBlogPostResponsitory, BlogPostResponsitory>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsApi",
-        builder => builder.WithOrigins("http://localhost:4200", "http://localhost:5232")
+        builder => builder.WithOrigins("http://localhost:4200", "http://localhost:5000")
             .AllowAnyHeader()
             .AllowAnyMethod());
 });
