@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "NET.BOOK.MVC.Utility/1.0.0": {
+        "runtime": {
+          "NET.BOOK.MVC.Utility.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NET.BOOK.MVC.Utility/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

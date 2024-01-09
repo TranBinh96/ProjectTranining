@@ -1,0 +1,12 @@
+C:\Users\BINHTT\Desktop\Manager_Project\ProjectTranining\NET.BOOK.MVC\NET.BOOK.MVC.Models\bin\Debug\net8.0\NET.BOOK.MVC.Models.deps.json
+C:\Users\BINHTT\Desktop\Manager_Project\ProjectTranining\NET.BOOK.MVC\NET.BOOK.MVC.Models\bin\Debug\net8.0\NET.BOOK.MVC.Models.dll
+C:\Users\BINHTT\Desktop\Manager_Project\ProjectTranining\NET.BOOK.MVC\NET.BOOK.MVC.Models\bin\Debug\net8.0\NET.BOOK.MVC.Models.pdb
+C:\Users\BINHTT\Desktop\Manager_Project\ProjectTranining\NET.BOOK.MVC\NET.BOOK.MVC.Models\obj\Debug\net8.0\NET.BOOK.MVC.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BINHTT\Desktop\Manager_Project\ProjectTranining\NET.BOOK.MVC\NET.BOOK.MVC.Models\obj\Debug\net8.0\NET.BOOK.MVC.Models.AssemblyInfoInputs.cache
+C:\Users\BINHTT\Desktop\Manager_Project\ProjectTranining\NET.BOOK.MVC\NET.BOOK.MVC.Models\obj\Debug\net8.0\NET.BOOK.MVC.Models.AssemblyInfo.cs
+C:\Users\BINHTT\Desktop\Manager_Project\ProjectTranining\NET.BOOK.MVC\NET.BOOK.MVC.Models\obj\Debug\net8.0\NET.BOOK.MVC.Models.csproj.CoreCompileInputs.cache
+C:\Users\BINHTT\Desktop\Manager_Project\ProjectTranining\NET.BOOK.MVC\NET.BOOK.MVC.Models\obj\Debug\net8.0\NET.BOOK.MVC.Models.sourcelink.json
+C:\Users\BINHTT\Desktop\Manager_Project\ProjectTranining\NET.BOOK.MVC\NET.BOOK.MVC.Models\obj\Debug\net8.0\NET.BOOK.MVC.Models.dll
+C:\Users\BINHTT\Desktop\Manager_Project\ProjectTranining\NET.BOOK.MVC\NET.BOOK.MVC.Models\obj\Debug\net8.0\refint\NET.BOOK.MVC.Models.dll
+C:\Users\BINHTT\Desktop\Manager_Project\ProjectTranining\NET.BOOK.MVC\NET.BOOK.MVC.Models\obj\Debug\net8.0\NET.BOOK.MVC.Models.pdb
+C:\Users\BINHTT\Desktop\Manager_Project\ProjectTranining\NET.BOOK.MVC\NET.BOOK.MVC.Models\obj\Debug\net8.0\ref\NET.BOOK.MVC.Models.dll

@@ -18,8 +18,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Migrations\" />
     <Folder Include="ModelRequest\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NET.BOOK.MVC.DataAccess\NET.BOOK.MVC.DataAccess.csproj" />
+    <ProjectReference Include="..\NET.BOOK.MVC.Models\NET.BOOK.MVC.Models.csproj" />
+    <ProjectReference Include="..\NET.BOOK.MVC.Utility\NET.BOOK.MVC.Utility.csproj" />
   </ItemGroup>
 
 </Project>

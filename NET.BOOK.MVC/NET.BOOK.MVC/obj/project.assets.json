@@ -3100,6 +3100,42 @@
             "rid": "win"
           }
         }
+      },
+      "NET.BOOK.MVC.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0",
+          "NET.BOOK.MVC.Models": "1.0.0",
+          "NET.BOOK.MVC.Utility": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/NET.BOOK.MVC.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NET.BOOK.MVC.DataAccess.dll": {}
+        }
+      },
+      "NET.BOOK.MVC.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/NET.BOOK.MVC.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NET.BOOK.MVC.Models.dll": {}
+        }
+      },
+      "NET.BOOK.MVC.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/NET.BOOK.MVC.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NET.BOOK.MVC.Utility.dll": {}
+        }
       }
     }
   },
@@ -8307,6 +8343,21 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "NET.BOOK.MVC.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../NET.BOOK.MVC.DataAccess/NET.BOOK.MVC.DataAccess.csproj",
+      "msbuildProject": "../NET.BOOK.MVC.DataAccess/NET.BOOK.MVC.DataAccess.csproj"
+    },
+    "NET.BOOK.MVC.Models/1.0.0": {
+      "type": "project",
+      "path": "../NET.BOOK.MVC.Models/NET.BOOK.MVC.Models.csproj",
+      "msbuildProject": "../NET.BOOK.MVC.Models/NET.BOOK.MVC.Models.csproj"
+    },
+    "NET.BOOK.MVC.Utility/1.0.0": {
+      "type": "project",
+      "path": "../NET.BOOK.MVC.Utility/NET.BOOK.MVC.Utility.csproj",
+      "msbuildProject": "../NET.BOOK.MVC.Utility/NET.BOOK.MVC.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -8315,6 +8366,9 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.0",
+      "NET.BOOK.MVC.DataAccess >= 1.0.0",
+      "NET.BOOK.MVC.Models >= 1.0.0",
+      "NET.BOOK.MVC.Utility >= 1.0.0",
       "bootstrap >= 5.3.2"
     ]
   },
@@ -8350,7 +8404,17 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\BINHTT\\Desktop\\Manager_Project\\ProjectTranining\\NET.BOOK.MVC\\NET.BOOK.MVC.DataAccess\\NET.BOOK.MVC.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\BINHTT\\Desktop\\Manager_Project\\ProjectTranining\\NET.BOOK.MVC\\NET.BOOK.MVC.DataAccess\\NET.BOOK.MVC.DataAccess.csproj"
+            },
+            "C:\\Users\\BINHTT\\Desktop\\Manager_Project\\ProjectTranining\\NET.BOOK.MVC\\NET.BOOK.MVC.Models\\NET.BOOK.MVC.Models.csproj": {
+              "projectPath": "C:\\Users\\BINHTT\\Desktop\\Manager_Project\\ProjectTranining\\NET.BOOK.MVC\\NET.BOOK.MVC.Models\\NET.BOOK.MVC.Models.csproj"
+            },
+            "C:\\Users\\BINHTT\\Desktop\\Manager_Project\\ProjectTranining\\NET.BOOK.MVC\\NET.BOOK.MVC.Utility\\NET.BOOK.MVC.Utility.csproj": {
+              "projectPath": "C:\\Users\\BINHTT\\Desktop\\Manager_Project\\ProjectTranining\\NET.BOOK.MVC\\NET.BOOK.MVC.Utility\\NET.BOOK.MVC.Utility.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
